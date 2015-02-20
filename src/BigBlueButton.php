@@ -1,4 +1,4 @@
-<?php namespace richp10\BigBlueButton;
+<?php
 /*
 
 BigBlueButton open source conferencing system - http://www.bigbluebutton.org/
@@ -38,12 +38,15 @@ Versions:
 					    -- See included samples for usage examples
    1.4  --  Updated by xaker1
                     (email : admin [a t ] xaker1 DOT ru)
+
+   (this is 1.4 packeged for use with composer)..
 */
 
 /* _______________________________________________________________________*/
 
-/* get the config values */
-require_once "config.php";
+/* removed the config, lets use the constructor instead require_once "config.php";
+
+namespace richp10\BigBlueButton;
 
 class BigBlueButton {
 		

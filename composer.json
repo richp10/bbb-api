@@ -11,8 +11,8 @@
     ],
     "require": { },
     "autoload": {
-        "psr-4": {
-            "richp10\\BigBlueButton\\": "src"
-        }
+        "classmap": [
+            "src/"
+        ]
     }
 }
