@@ -44,9 +44,9 @@ Versions:
 
 /* _______________________________________________________________________*/
 
-/* removed the config, lets use the constructor instead require_once "config.php";
+/* removed the config, lets use the constructor instead of using config.php */
 
-namespace richp10\BigBlueButton;
+namespace richp10\bbb;
 
 class BigBlueButton {
 		

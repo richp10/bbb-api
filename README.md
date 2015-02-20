@@ -14,7 +14,7 @@ Changes:
 
 Usage
 ======
-use richp10\BigBlueButton\BigBlueButton;
+use \richp10\bbb\BigBlueButton;
 $bbb = new BigBlueButton();
 
 See examples folder for rest of the available commands. 
