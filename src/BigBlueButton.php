@@ -89,7 +89,7 @@ class BigBlueButton {
 			curl_close( $ch );
 
 			if($data)
-				return (new SimpleXMLElement($data));
+				return (new \SimpleXMLElement($data));
 			else
 				return false;
 		}
