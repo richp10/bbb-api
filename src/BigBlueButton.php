@@ -39,12 +39,12 @@ Versions:
    1.4  --  Updated by xaker1
                     (email : admin [a t ] xaker1 DOT ru)
 
-   (this is 1.4 packeged for use with composer)..
+   1.4 re-packed by richp10:
+	added namespace and autoloading using composer
+	removed use of config.php and passed these via constructor
 */
 
 /* _______________________________________________________________________*/
-
-/* removed the config, lets use the constructor instead of using config.php */
 
 namespace richp10\bbb;
 
@@ -55,15 +55,14 @@ class BigBlueButton {
 	
 	/* ___________ General Methods for the BigBlueButton Class __________ */
 	
-	function __construct() {
-	/* 
-	Establish just our basic elements in the constructor: 
-	*/
-		// BASE CONFIGS - set these for your BBB server in config.php and they will
-		// simply flow in here via the constants:		
-		$this->_securitySalt 		= CONFIG_SECURITY_SALT;
-		$this->_bbbServerBaseUrl 	= CONFIG_SERVER_BASE_URL;		
-	}
+        function __construct($CONFIG_SECURITY_SALT, $CONFIG_SERVER_BASE_URL) {
+        /*
+        Establish just our basic elements in the constructor:
+        */
+                // Use the constructor to pass these, instead of config.php
+                $this->_securitySalt            = $CONFIG_SECURITY_SALT;
+                $this->_bbbServerBaseUrl        = $CONFIG_SERVER_BASE_URL;
+        }
 	
 	private function _processXmlResponse($url, $xml = ''){
 	/* 

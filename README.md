@@ -10,15 +10,16 @@ Current version from:
 
 Changes: 
 * Unused files thinned out. 
-* Autoloader and namespace working
+* Autoloader and namespace instead of require
+* Removed config.php and passed API and URL via the constructor instead. 
 
 Usage
 ======
 use \richp10\bbb\BigBlueButton;
-$bbb = new BigBlueButton();
+
+$bbb = new BigBlueButton($CONFIG_SECURITY_SALT, $CONFIG_SERVER_BASE_URL); 
 
 See examples folder for rest of the available commands. 
-
 
 License 
 ======= 
