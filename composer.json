@@ -1,0 +1,14 @@
+{
+    "name": "richp10/bbb-api",
+    "description": "The bbb php library from the Big Blue Button project.",
+    "license": "LGPL3",
+    "authors": [
+        {
+            "name": "richp10",
+            "email": "richp10@gmail.com"
+        }
+    ],
+    "require": {
+
+    }
+}
