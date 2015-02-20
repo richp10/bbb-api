@@ -1,4 +1,4 @@
-<?php 
+<?php namespace richp10\BigBlueButton;
 /*
 
 BigBlueButton open source conferencing system - http://www.bigbluebutton.org/

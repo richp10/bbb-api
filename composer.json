@@ -2,13 +2,17 @@
     "name": "richp10/bbb-api",
     "description": "The bbb php library from the Big Blue Button project.",
     "license": "LGPL3",
+    "keywords": ["bigbluebutton"],
     "authors": [
         {
             "name": "richp10",
             "email": "richp10@gmail.com"
         }
     ],
-    "require": {
-
+    "require": { },
+    "autoload": {
+        "psr-4": {
+            "richp10\\BigBlueButton\\": "src"
+        }
     }
 }
