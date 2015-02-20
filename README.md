@@ -1,16 +1,23 @@
 # bbb-api
-Packaged BigBlueButton API from original BBB sources
+Re-packaged BigBlueButton API from original BBB sources
 
-Library to integrate php web applications with BigBlueButton 0.8
+Library to integrate php web applications with BigBlueButton 0.8 by Peter Mentzer.
 
-Contributed by:
-        Peter Mentzer.
 Original version available at:
         https://github.com/petermentzer/bbb-api-php
 Current version from: 
 	https://github.com/bigbluebutton/bigbluebutton/tree/master/labs/bbb-api-php
 
-This version has been thinned out for use with composer. 
+Changes: 
+* Unused files thinned out. 
+* Autoloader and namespace working
+
+Usage
+======
+use richp10\BigBlueButton\BigBlueButton;
+$bbb = new BigBlueButton();
+
+See examples folder for rest of the available commands. 
 
 
 License 
