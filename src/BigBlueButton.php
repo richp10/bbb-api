@@ -94,7 +94,7 @@ class BigBlueButton {
 				return false;
 		}
 		if(!empty($xml))
-			throw new Exception('Set xml, but curl does not installed.');
+			throw new \Exception('Set xml, but curl does not installed.');
 
 		return (simplexml_load_file($url));	
 	}
@@ -105,10 +105,10 @@ class BigBlueButton {
 			return $param;
 		}
 		elseif (!isset($param)) {
-			throw new Exception('Missing parameter.');
+			throw new \Exception('Missing parameter.');
 		}
 		else {
-			throw new Exception(''.$name.' is required.');
+			throw new \Exception(''.$name.' is required.');
 		}
 	}
 
